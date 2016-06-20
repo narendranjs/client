@@ -22,7 +22,7 @@ import com.sun.jersey.guice.spi.container.servlet.GuiceContainer;
  * @author U25276
  *
  */
-public class ServletModule extends JerseyServletModule {
+public class ClientServletModule extends JerseyServletModule {
 	
 	@Override
 	protected void configureServlets() {

@@ -12,7 +12,7 @@ import javax.ws.rs.core.Response;
 import org.pf.client.core.dto.PeopleFinderUser;
 
 /**
- * @author U25276
+ * @author Narendran (narendran.js@gmail.com)
  *
  */
 @Path("/client")

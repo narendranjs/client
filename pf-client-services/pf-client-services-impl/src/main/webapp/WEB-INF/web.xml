@@ -5,9 +5,7 @@
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
 	
-	<listener>
-		<listener-class>org.pf.client.guice.EnvironmentContextListener</listener-class>
-	</listener>
+	
 	<filter>
 		<filter-name>guiceFilter</filter-name>
 		<filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
@@ -16,4 +14,7 @@
 		<filter-name>guiceFilter</filter-name>
 		<url-pattern>/rest/*</url-pattern>
 	</filter-mapping>
+	<listener>
+		<listener-class>org.pf.client.guice.EnvironmentContextListener</listener-class>
+	</listener>
 </web-app>

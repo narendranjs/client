@@ -176,14 +176,17 @@ under the License.
     <mirror>
         <id>repo.exist.com</id>
         <url>http://repo.exist.com/maven2</url>
+        <mirrorOf>central</mirrorOf>
     </mirror>
     <mirror>
         <id>ibiblio.org</id>
         <url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
+        <mirrorOf>central</mirrorOf>
     </mirror>
     <mirror>
         <id>ibiblio.net</id>
         <url>http://www.ibiblio.net/pub/packages/maven2</url>
+        <mirrorOf>central</mirrorOf>
     </mirror>
     <!--mirror>
         <id>mirror.netcologne.de</id>
@@ -192,6 +195,7 @@ under the License.
     <mirror>
         <id>uk.maven.org</id>
         <url>http://uk.maven.org/maven2</url>
+        <mirrorOf>central</mirrorOf>
     </mirror>
   </mirrors>
 

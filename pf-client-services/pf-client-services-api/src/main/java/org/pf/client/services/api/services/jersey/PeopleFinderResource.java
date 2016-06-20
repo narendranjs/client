@@ -3,6 +3,7 @@
  */
 package org.pf.client.services.api.services.jersey;
 
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -19,7 +20,11 @@ public interface PeopleFinderResource {
 	
 	@POST
 	@Produces({"application/json", "application/json"})
-	@Path("queryClient")
-	Response getPeopleFinderDetails(PeopleFinderUser user);
+	@Path("/queryClient")
+	Response postPeopleFinderDetails(PeopleFinderUser user);
 
+	@GET
+	@Produces({"application/json", "application/json"})
+	@Path("/testClient")
+	Response getTestDetails();
 }

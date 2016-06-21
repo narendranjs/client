@@ -32,8 +32,8 @@ public class ClientServletModule extends JerseyServletModule {
 		bind(MessageBodyWriter.class).to(JacksonJsonProvider.class);
 		
 		Map<String, String> params=Maps.newHashMap();
-		params.put("com.sun.jersey.spi.container.ContainerRequestFilters"
-				, "org.pf.client.guice.filter.RequestFilter");
+		/*params.put("com.sun.jersey.spi.container.ContainerRequestFilters"
+				, "org.pf.client.guice.filter.RequestFilter");*/
 		params.put(JSONConfiguration.FEATURE_POJO_MAPPING, Boolean.TRUE.toString());
 		serve("/rest/*").with(GuiceContainer.class, params);
 	}

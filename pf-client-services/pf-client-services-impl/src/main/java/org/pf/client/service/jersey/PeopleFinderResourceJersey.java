@@ -39,7 +39,7 @@ public class PeopleFinderResourceJersey implements PeopleFinderResource {
 	@Override
 	public Response getTestDetails() {
 		String responseText = producer.requestBody(ClientRoute.DIRECT_FROM_ROUTE, "Calling From Service", String.class);
-		ResponseBuilder response = Response.ok(responseText);
+		ResponseBuilder response = Response.ok(responseText/*+" This is a rext"*/);
 		return response.build();
 	}
 }

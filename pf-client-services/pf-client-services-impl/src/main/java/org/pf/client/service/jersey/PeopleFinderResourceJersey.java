@@ -31,14 +31,15 @@ public class PeopleFinderResourceJersey implements PeopleFinderResource {
 	/* (non-Javadoc)
 	 * @see org.pf.client.services.api.services.jersey.PeopleFinderResource#getPeopleFinderDetails(org.pf.client.core.dto.PeopleFinderUser)
 	 */
+	@Override
 	public Response postPeopleFinderDetails(PeopleFinderUser user) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Response getTestDetails() {
-		String responseText = producer.requestBody(ClientRoute.DIRECT_FROM_ROUTE, "Calling From Service", String.class);
+	public Response getTestDetails(String userName) {
+		String responseText = producer.requestBody(ClientRoute.DIRECT_FROM_ROUTE, userName, String.class);
 		ResponseBuilder response = Response.ok(responseText/*+" This is a rext"*/);
 		return response.build();
 	}

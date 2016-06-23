@@ -110,6 +110,12 @@
 			<artifactId>camel-spring</artifactId>
 			<version>${camel.version}</version>
 		</dependency>
+		<!-- https://github.com/OfficeDev/ews-java-api/wiki/Getting-Started-Guide#using-the-library -->
+		<dependency>
+			<groupId>com.microsoft.ews-java-api</groupId>
+			<artifactId>ews-java-api</artifactId>
+			<version>2.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-http4</artifactId>

@@ -6,6 +6,7 @@ package org.pf.client.services.api.services.jersey;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
@@ -25,6 +26,6 @@ public interface PeopleFinderResource {
 
 	@GET
 	@Produces({"application/json", "application/json"})
-	@Path("/testClient")
-	Response getTestDetails();
+	@Path("/{userName}")
+	Response getTestDetails(@PathParam("userName") String userName);
 }

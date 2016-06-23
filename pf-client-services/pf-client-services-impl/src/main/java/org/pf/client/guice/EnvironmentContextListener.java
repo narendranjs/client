@@ -43,7 +43,7 @@ public final class EnvironmentContextListener extends GuiceServletContextListene
 			modules.add(new ClientCamelModule(compositeConfiguration));
 			return Guice.createInjector(modules);
 		} catch(Exception ex){
-			throw new RuntimeException("Some thing happened");
+			throw new RuntimeException("Some thing happened", ex);
 		}
 	}
 

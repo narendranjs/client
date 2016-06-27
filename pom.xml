@@ -25,4 +25,8 @@
 			</plugin>
 		</plugins>
 	</build>
+	<properties>
+		<camel.version>2.15.1</camel.version>
+		<jersey.version>1.18</jersey.version>
+	</properties>
 </project>

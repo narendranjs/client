@@ -4,7 +4,7 @@
 package org.pf.client.core.dto;
 
 /**
- * @author U25276
+ * @author Narendran (narendran.js@gmail.com)
  *
  */
 public class PeopleFinderUser {
